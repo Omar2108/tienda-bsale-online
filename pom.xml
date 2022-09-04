@@ -54,6 +54,7 @@
             <version>1.6.4</version>
         </dependency>
     </dependencies>
+    
 
     <build>
         <plugins>
@@ -67,6 +68,9 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                    <processTypes>
+                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+                    </processTypes>
                 </configuration>
             </plugin>
             <plugin>
