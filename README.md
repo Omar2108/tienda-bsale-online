@@ -12,7 +12,7 @@ link:  https://tienda-bsale-online.herokuapp.com/v1/category/all , mediante este
 link: https://tienda-bsale-online.herokuapp.com/v1/category/filter/{nameCategory} , mediante este endpoint podra obtener todos las categorias almacenados en la tabla categorias de la base de datos, que coincidan con el nombre de la categoria ingresado recibe un parametro tipo string. Métodos de petición HTTP utilizado GET.
 
 ## Documentación
-Visite la documentación [en linea](httphttps://tienda-bsale-online.herokuapp.com/swagger-ui/index.html#/:// "en linea") para obtener la guía más actualizada.
+Visite la documentación en linea en: https://tienda-bsale-online.herokuapp.com/swagger-ui/index.html#/ , para obtener la guía más actualizada.
 
 
 ## Descarga y registro de cambios:
