@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- *
+ * Contiene la logica de negocio que se va a ejecutar en el controlador
  * @author Omar rodriguez Chamorro
  * @version 1.0.0
  */
@@ -19,9 +19,14 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class CategoryService implements ICategoryService{
     
+    //representa la interfaz categoryRepository
     @Autowired 
     private CategoryRepository categoryRepository;
     
+    /**
+     * Retorna todos las categorias almacenados en la base de datos
+     * @return 
+     */
     @Override
     @Transactional(readOnly = true)
     public List<Category> listAll(){
@@ -31,7 +36,7 @@ public class CategoryService implements ICategoryService{
     }
     
     /**
-     *
+     * Retorna todos las categorias que coincidan con el parametro ingresado
      * @param nameCategory
      * @return
      */

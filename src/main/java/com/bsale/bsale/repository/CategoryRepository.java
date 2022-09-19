@@ -12,14 +12,14 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 /**
- *
+ * contiene todos los metedos minimos que se van implementar en la clase category
  * @author Omar Rodriguez Chamorro
  * @version 1.0.0
  */
 public interface CategoryRepository extends CrudRepository<Category, Integer> {
     
     /**
-     *
+     * Retorna todo las categorias que coincidan con la palabra ingresada, almacenado en la tabla category
      * @param nameCategory
      * @return
      */

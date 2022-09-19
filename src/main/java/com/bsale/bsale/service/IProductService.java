@@ -1,22 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.bsale.bsale.service;
 
-import com.bsale.bsale.bean.Products;
 import java.util.List;
 
 /**
- *
+ * Contiene los metodo minimos a implementarse en la clase ProductService
  * @author Omar Rodriguez Chamorro
  * @version 1.0.0
  */
 public interface IProductService {
     
-    
-    
+    /**
+     * Retorna todos los productos que coincidan la palabra ingresada
+     * @param nameProduct
+     * @return 
+     */    
     public List listAllFromName(String nameProduct);
     
 }

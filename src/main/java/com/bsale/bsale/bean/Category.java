@@ -13,7 +13,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- *
+ * Representa la tabla categoria en la base de datos
  * @author Omar Rodriguez Chamorro
  * @version 1.0.0
  */
@@ -25,10 +25,12 @@ import lombok.NoArgsConstructor;
 @Table(name = "category")
 public class Category implements Serializable {
     
+    //representa el campo id de la tabla category
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     
+    //representa el campo name de la tabla category
     @Column(name = "name")
     private String name;
     
