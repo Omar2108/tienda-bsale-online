@@ -30,6 +30,14 @@ public class MainController {
     //representa la clase categoryService
     @Autowired
     private CategoryService CategoryService;
+    
+    @GetMapping(path = "/")
+    public @ResponseBody String index() {
+        
+        return "¡BIENVENIDOS, YA PUEDEN COMENZAR A UTILIZAR LA API TIENDA ONLINE DE PRODUCTOS!, "
+                + "PUEDE CONSULTAR LOS DIFERENTES ENDPOINT, EN EL REPOSITORIO,"
+                + " https://github.com/Omar2108/tienda-bsale-online.git";
+    }
 
     //path de tipo get que retorna todos los productos almacenados en la tabla product
     @GetMapping(path = "/v1/products/all")
