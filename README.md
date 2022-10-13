@@ -20,6 +20,16 @@ Siempre se recomienda descargar desde GitHub la última versión.
 ###  Usando la línea de comando:
 ####  via Git:
     git clone https://github.com/Omar2108/tienda-bsale-online.git
+    
+ ### Instalacion de Dependencias
+    npm install 
+	npm install --legacy-peer-deps --force
+
+### Levantamiento de la aplicacion 
+#### En Desarrollo
+     npm run devstart
+#### En Produccion 
+    npm start
 
 ## Compatibilidad con navegadores
 - IE / Edge
